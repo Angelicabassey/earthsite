@@ -2,26 +2,56 @@
     box-sizing: border-box;
 }
 body{
-    padding: 0;
-    margin: 0;
+    
 }
 header{
-    background: cornflowerblue;
     height: 66px;
+    background: chocolate;
 }
 header .logo{
-    float: left;
+    height: inherit;
     margin-left: 2em;
-
+    border: 1px solid;
+    float: left;
 }
 header ul{
-    float: right;
-    margin: 0;
-    padding: 0;
     list-style: none;
+    float: right;
+    padding: 0;
+    margin: 0;
 }
-header ul li{
+header ul li {
     float: left;
-    position: relative;
+position: relative;
 }
-header ul
+ul li ul a:hover{
+    background: cadetblue;
+    border-radius: 20px;
+}
+ul li ul li a{
+    padding: 10px;
+
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    padding: 21px;
+}
+header ul li:hover ul{
+    display: block;
+    background: blanchedalmond;
+    
+}
+ul li ul{
+    top: 66px;
+    width: 180px;
+    right: 0;
+    position: absolute;
+    display:none;
+
+}
+ul li ul li{
+    width: 100%;
+}
+
